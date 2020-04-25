@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hocking College Hawks Spirit Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href = "bootStrapStyle.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+    @media only screen and (max-width: 600px) {
+     body {
+      background-color: lightblue;
+      }
+    }
+      
+      
+      
+
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+
+      @media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+      [class*="col-"] {
+      width: 50%;
+      }
+    }
+
+    /*For iPads*/
+    [class*="col-"] {
+      width: 100%;
+    }
+
+
+
+
+
+        /* for the top banner of the webpage*/
+
+        .headerGridContainer {
+            display: grid;
+            grid-template-areas:
+            'header logo logo logo';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+            
+        }
+
+.item1Header { 
+            grid-area: header; 
+            font-size: 50px;
+            padding: 2%;
+            color: white;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 75px;
+            display: flex;
+           align-items: center;
+           text-align: center;
+
+            color: #FFFFFF;
+
+        }
+
+        .item2Header {
+            grid-area: logo;
+        }
+
+
+
+/*for the grid contents on a webpage*/
+
+
+
+
+
+
+.item1 {grid-area: category1; }
+.item2 { grid-area: image11; }
+.item3 { grid-area: image12; }
+.item4 { grid-area: category2; }
+.item5 { grid-area: image21; }
+.item6 { grid-area: image22; }
+.item7 { grid-area: category3; }
+.item8 { grid-area: image31; }
+.item9 { grid-area: image32; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'category1 image11 image12'
+    'category2 image21 image22'
+    'category3 image31 image32';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin-bottom: 2%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+ 
+/*for the footer banner on the webpage*/
+
+.footerGridContainer {
+     display: grid;
+    grid-template-areas:
+    'footer logo';
+    grid-gap: 10px;
+    background-color: orange;
+    padding: 10px;
+}
+
+.item1Footer { 
+            grid-area: footer; 
+            font-size: 50px;
+            padding: 2%;
+            color: white;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 75px;
+            display: flex;
+           align-items: center;
+           text-align: center;
+
+            color: #FFFFFF;
+
+        }
+
+        .item2Footer {
+            grid-area: logo;
+        }
+
+        /*Extra homework grid*/
+
+        .randomGridContainer {
+         display: grid;
+         grid-template-areas: 'body logo';
+        grid-template-columns: 80px 200px auto 40px;
+        background-color: pink;
+        grid-gap:10px;
+         }
+
+         .item1Random { 
+            grid-area: random; 
+            font-size: 50px;
+            padding: 2%;
+            color: pink;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 75px;
+            display: flex;
+           align-items: center;
+           text-align: center;
+
+            color: #FFFFFF;
+
+        }
+
+        .item2Random {
+            grid-area: logo;
+        }
+
+
+
+
+
+    </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--changed bg-light to background color green-->
+            <a style ="margin-left: 5%" class="navbar-link navButtonCustom" href="#">About</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link navButtonCustom" href="#">Directory <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navButtonCustom" href="#">Bookstore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    College Credit Plus
+                  </a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Athletics
+                    </a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Email
+                    </a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Self Service
+                    </a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      BlackBoard
+                    </a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Webadvisor
+                    </a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link navButtonCustom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Registar
+                    </a>
+                   </li>
+               
+              </ul>
+        
+    
+              <br>
+    
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+    
+            </div>
+          </nav>
+
+           <!--Adding logo to the left side of the nav area-->
+
+      <img style = "padding: 10px" src = "hockingCollegeLogo.jpg" width="15%vw" height="15%vh">
+
+
+      <!--This is the white nav bar-->
+
+      <div style= "float: right; margin-right: 10%;">
+
+      <nav class="navbar navbar-expand-lg navbar-light"> <!--changed to background color white-->
+       <a class="navbar-link navButtonCustomBlack" href="#">Future Students</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link navButtonCustomBlack" href="#">Current Students<span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link navButtonCustomBlack" href="#">Military</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link navButtonCustomBlack" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Majors
+             </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link navButtonCustomBlack" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Parents
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link navButtonCustomBlack" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Alumni & Community
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link navButtonCustomBlack" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Faculty/Staff
+               </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link navButtonCustomBlack" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Resources
+               </a>
+              </li>
+           </ul>
+           </div>
+           </nav>
+
+        <div class = "headerGridContainer">
+            <div class = "item1Header">Hocking College Spirit Store</div>
+            <div class = "item2Header"><img src = "data:image/png;base64,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"></div>
+
+        </div>
+
+        <div class="grid-container">
+            <div class="item1">Gifts</div>
+            <div class="item2"><img src = "https://bookstore.hocking.edu/sites/bookstore.hocking.edu/files/imagecache/product/isbn_images/BLAKT.jpg"></div>
+            <div class="item3"><img src = "https://bookstore.hocking.edu/sites/bookstore.hocking.edu/files/imagecache/product/isbn_images/FLAG.jpg"></div>  
+            <div class="item4">Clothing</div>
+            <div class="item5"><img src = "https://bookstore.hocking.edu/sites/bookstore.hocking.edu/files/imagecache/product/isbn_images/Blue.jpg"></div>
+            <div class="item6"><img src = "https://bookstore.hocking.edu/sites/bookstore.hocking.edu/files/imagecache/product/isbn_images/ASH.jpg"></div>
+          </div>
+
+          <div class = "footerGridContainer">
+            <div class = "item1Footer">Check Out New Items Daily!</div>
+            <div class = "item2Footer"><img style = "background-color: white" src = "hockingCollegeLogo.jpg" width = "100" height = "100"></div>
+
+        </div>
+
+
+          
+
+    </body>
