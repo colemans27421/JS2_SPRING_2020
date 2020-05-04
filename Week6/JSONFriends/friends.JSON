@@ -1,0 +1,38 @@
+{ "friendsCharacters": [
+    {
+        "name": "Ross",
+        "actor": "David Schwimmer",
+        "age": 53,
+        "hairColor": "brown"
+    },
+    {
+        "name": "Joey",
+        "actor": "Matt LeBlanc",
+        "age": 52,
+        "hairColor": "brown"
+    },
+    {
+        "name":"Chandler",
+        "actor":"Matthew Perry",
+        "age":50,
+        "hairColor": "lightBrown"
+    },
+    {
+        "name":"Rachel",
+        "actor": "Jennifer Aniston",
+        "age": 51,
+        "hairColor": "lightBrown"
+    },
+    {
+        "name": "Monica",
+        "actor": "Courtney Cox",
+        "age": 55,
+        "hairColor":"brown"
+    },
+    {
+        "name": "Pheobe",
+        "actor": "Lisa Kudrow",
+        "age": 56,
+        "hairColor": "blonde"
+    }
+]}
